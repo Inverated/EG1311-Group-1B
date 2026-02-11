@@ -3881,7 +3881,7 @@
 			)
 		)
 	)
-	(global_label "Motor_1+"
+	(global_label "Motor_1-"
 		(shape input)
 		(at 69.85 62.23 0)
 		(fields_autoplaced yes)
@@ -4475,7 +4475,7 @@
 			)
 		)
 	)
-	(global_label "Motor_1-"
+	(global_label "Motor_1+"
 		(shape input)
 		(at 69.85 67.31 0)
 		(fields_autoplaced yes)
