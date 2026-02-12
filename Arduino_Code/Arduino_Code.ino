@@ -25,8 +25,8 @@ MotorPin1: High; MotorPin2: High => Not go (+ve & -ve same same level, no potent
 int TRIG_PIN = 12;
 int ECHO_PIN = 13;
 float SPEED_OF_SOUND = 0.0345;
-int STOPPING_DISTANCE = 10; 
-int STOP_TIME_TO_LAUNCH = 2000;
+int STOPPING_DISTANCE = 20; 
+int STOP_TIME_TO_LAUNCH = 1000;
 
 // H-Bridge Motor Driver
 int MOTOR_SPEED = 255;  //0-255. Using constant speed for both motor to simplify things
@@ -82,6 +82,9 @@ void setup() {
 void loop() {
   // Should reverse. Untested
   if (launched) {
+    analogWrite(LEFT_ENABLE_PIN, MOTOR_SPEED);
+    analogWrite(RIGHT_ENABLE_PIN, MOTOR_SPEED);
+
     digitalWrite(LEFT_DRIVER_PIN1, LOW);
     digitalWrite(LEFT_DRIVER_PIN2, HIGH);
 
@@ -99,7 +102,7 @@ void loop() {
   int microsecs = pulseIn(ECHO_PIN, HIGH);
   float cms = microsecs * SPEED_OF_SOUND / 2;
 
-  //Serial.print("Distance of: "); Serial.println(cms);
+  Serial.print("Distance of: "); Serial.println(cms);
   if (cms <= STOPPING_DISTANCE) {
     // Stop the motor
     analogWrite(LEFT_ENABLE_PIN, 0);
