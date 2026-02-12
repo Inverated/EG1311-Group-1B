@@ -25,7 +25,7 @@ MotorPin1: High; MotorPin2: High => Not go (+ve & -ve same same level, no potent
 int TRIG_PIN = 12;
 int ECHO_PIN = 13;
 float SPEED_OF_SOUND = 0.0345;
-int STOPPING_DISTANCE = 20; 
+int STOPPING_DISTANCE = 10; 
 int STOP_TIME_TO_LAUNCH = 1000;
 
 // H-Bridge Motor Driver
