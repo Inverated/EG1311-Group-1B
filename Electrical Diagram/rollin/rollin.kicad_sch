@@ -2072,8 +2072,20 @@
 		(uuid 05b5b57b-495e-47b2-9ead-de8996b578c6)
 	)
 	(rectangle
-		(start 87.63 15.24)
+		(start 87.63 46.99)
 		(end 123.19 100.33)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 400e3bc1-fe1d-49af-806e-6b8183c5d79e)
+	)
+	(rectangle
+		(start 87.63 15.24)
+		(end 123.19 44.45)
 		(stroke
 			(width 0)
 			(type default)
@@ -2097,7 +2109,7 @@
 		(uuid 8879e99f-2b96-47b5-8baa-68a75e6c6fa3)
 	)
 	(rectangle
-		(start 15.24 105.41)
+		(start 15.24 104.14)
 		(end 63.5 134.62)
 		(stroke
 			(width 0)
@@ -2121,7 +2133,7 @@
 		(uuid e4541486-fef4-4512-a3e3-0f2a6fa5c85e)
 	)
 	(rectangle
-		(start 66.04 105.41)
+		(start 66.04 104.14)
 		(end 87.63 134.62)
 		(stroke
 			(width 0)
@@ -2132,9 +2144,9 @@
 		)
 		(uuid f68c7d80-dce7-4e99-b7d4-fe06a56cb935)
 	)
-	(text "Motor"
+	(text "Rear Motor"
 		(exclude_from_sim yes)
-		(at 95.758 19.304 0)
+		(at 98.806 19.558 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -2180,7 +2192,7 @@
 	)
 	(text "Launch Mechanism (Servo)\n"
 		(exclude_from_sim yes)
-		(at 39.116 109.982 0)
+		(at 39.116 107.188 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -2190,9 +2202,21 @@
 		)
 		(uuid "888c5c8f-a0f8-4ae8-90b0-c80aae8a17a7")
 	)
+	(text "Front Motor"
+		(exclude_from_sim yes)
+		(at 99.06 50.8 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.4064)
+				(bold yes)
+			)
+		)
+		(uuid "cd0982d9-647b-40eb-bfdf-c6021ecced95")
+	)
 	(text "Power"
 		(exclude_from_sim yes)
-		(at 76.454 109.474 0)
+		(at 76.708 107.442 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -2207,6 +2231,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ddb9e69-450a-4ac3-b784-56872f0a70df")
+	)
+	(junction
+		(at 170.18 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfc37de4-f18b-45cf-a3cc-071b875e4402")
 	)
 	(junction
 		(at 68.58 43.18)
@@ -2296,7 +2326,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 73.66) (xy 107.95 74.93)
+			(xy 107.95 81.28) (xy 107.95 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2376,7 +2406,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 91.44) (xy 171.45 91.44)
+			(xy 170.18 91.44) (xy 180.34 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2416,6 +2446,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 82.55) (xy 148.59 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f08dc8c-7363-490a-a419-3a55a27682c6")
+	)
+	(wire
+		(pts
 			(xy 29.21 63.5) (xy 39.37 63.5)
 		)
 		(stroke
@@ -2446,7 +2486,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 82.55) (xy 144.78 82.55)
+			(xy 142.24 82.55) (xy 148.59 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2456,7 +2496,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 88.9) (xy 107.95 87.63)
+			(xy 107.95 96.52) (xy 107.95 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2516,7 +2556,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 64.77) (xy 107.95 64.77)
+			(xy 101.6 72.39) (xy 107.95 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2576,7 +2616,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 64.77) (xy 107.95 63.5)
+			(xy 107.95 72.39) (xy 107.95 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2596,7 +2636,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 49.53) (xy 107.95 49.53)
+			(xy 101.6 57.15) (xy 107.95 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2606,7 +2646,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 88.9) (xy 107.95 88.9)
+			(xy 101.6 96.52) (xy 107.95 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2676,7 +2716,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 73.66) (xy 107.95 73.66)
+			(xy 101.6 81.28) (xy 107.95 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2746,13 +2786,23 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 49.53) (xy 107.95 50.8)
+			(xy 107.95 57.15) (xy 107.95 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "986466ee-d209-42c3-b6b4-db8c0695e37e")
+	)
+	(wire
+		(pts
+			(xy 148.59 91.44) (xy 170.18 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a627d854-5376-4b5c-b62d-c1845406035d")
 	)
 	(wire
 		(pts
@@ -4435,7 +4485,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 171.45 91.44 0)
+		(at 180.34 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4445,7 +4495,7 @@
 		)
 		(uuid "51bb9381-2241-4214-bea8-885c625f6426")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.3057 91.44 0)
+			(at 187.1957 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4501,7 +4551,7 @@
 	)
 	(global_label "Motor_2-"
 		(shape input)
-		(at 101.6 64.77 180)
+		(at 101.6 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4511,7 +4561,7 @@
 		)
 		(uuid "57443d48-a8cd-4887-80aa-c2a744d68a5b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.604 64.77 0)
+			(at 89.604 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4809,7 +4859,7 @@
 	)
 	(global_label "Motor_3+"
 		(shape input)
-		(at 101.6 73.66 180)
+		(at 101.6 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4819,7 +4869,7 @@
 		)
 		(uuid "9f090e00-8a0d-436c-b624-49e7e94b846c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.604 73.66 0)
+			(at 89.604 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4831,7 +4881,7 @@
 	)
 	(global_label "Motor_2+"
 		(shape input)
-		(at 101.6 49.53 180)
+		(at 101.6 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4841,7 +4891,7 @@
 		)
 		(uuid "a542b1ee-c67d-4421-bab2-ffc0f18413a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.604 49.53 0)
+			(at 89.604 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4939,31 +4989,9 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape input)
-		(at 144.78 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cb5e0933-e5ee-459b-9e7c-8b96c7b2baef")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.6357 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Motor_3-"
 		(shape input)
-		(at 101.6 88.9 180)
+		(at 101.6 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4973,7 +5001,7 @@
 		)
 		(uuid "d577fb52-4e47-4d3f-9d43-78438ff4ae10")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.604 88.9 0)
+			(at 89.604 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5103,7 +5131,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15bfdd52-33eb-4c14-ba72-96d0921ae1bc")
-		(property "Reference" "U1"
+		(property "Reference" "L1"
 			(at 56.7533 25.4 0)
 			(effects
 				(font
@@ -5200,7 +5228,7 @@
 		(instances
 			(project ""
 				(path "/3285cce8-c68d-4dd9-8308-ce1a0c5ab0a8"
-					(reference "U1")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -5215,16 +5243,16 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ef6b3e4-f005-4b4e-ac0d-84ad7b7655a3")
-		(property "Reference" "HC-SR1"
-			(at 135.128 77.216 90)
+		(property "Reference" "U1"
+			(at 133.858 77.978 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 134.874 78.486 90)
+		(property "Value" "Ultrasonic_sensor"
+			(at 135.89 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5273,7 +5301,7 @@
 		(instances
 			(project ""
 				(path "/3285cce8-c68d-4dd9-8308-ce1a0c5ab0a8"
-					(reference "HC-SR1")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5354,7 +5382,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_DC")
-		(at 107.95 80.01 0)
+		(at 107.95 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5363,7 +5391,7 @@
 		(fields_autoplaced yes)
 		(uuid "577e7090-ea9c-441c-92e2-08a463b0810d")
 		(property "Reference" "M4"
-			(at 113.03 81.2799 0)
+			(at 113.03 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5372,7 +5400,7 @@
 			)
 		)
 		(property "Value" "Motor_DC"
-			(at 113.03 83.8199 0)
+			(at 113.03 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5381,7 +5409,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 82.296 0)
+			(at 107.95 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5390,7 +5418,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 82.296 0)
+			(at 107.95 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5399,7 +5427,7 @@
 			)
 		)
 		(property "Description" "DC Motor"
-			(at 107.95 80.01 0)
+			(at 107.95 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5579,7 +5607,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_DC")
-		(at 107.95 55.88 0)
+		(at 107.95 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5588,7 +5616,7 @@
 		(fields_autoplaced yes)
 		(uuid "6912644f-4b25-490d-b011-9dd54a297974")
 		(property "Reference" "M3"
-			(at 113.03 57.1499 0)
+			(at 113.03 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5597,7 +5625,7 @@
 			)
 		)
 		(property "Value" "Motor_DC"
-			(at 113.03 59.6899 0)
+			(at 113.03 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5606,7 +5634,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 58.166 0)
+			(at 107.95 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5615,7 +5643,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 58.166 0)
+			(at 107.95 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5624,7 +5652,7 @@
 			)
 		)
 		(property "Description" "DC Motor"
-			(at 107.95 55.88 0)
+			(at 107.95 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
