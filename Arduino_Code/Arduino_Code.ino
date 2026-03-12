@@ -29,7 +29,7 @@ int STOPPING_DISTANCE = 10;
 int STOP_TIME_TO_LAUNCH = 1000;
 
 // H-Bridge Motor Driver
-int MOTOR_SPEED = 255;  //0-255. Using constant speed for both motor to simplify things
+int MOTOR_SPEED = 200;  //0-255. Using constant speed for both motor to simplify things
 
 // Left Motor
 int LEFT_DRIVER_PIN1 = 4;
@@ -44,8 +44,8 @@ int RIGHT_ENABLE_PIN = 6;
 // Servo Motor
 Servo sv;
 int SERVO_PIN = 3;
-int INITIAL_ANGLE = 180;
-int LAUNCH_ANGLE = 90;
+int INITIAL_ANGLE = 230;
+int LAUNCH_ANGLE = 70;
 
 // Others
 bool launched = false;
@@ -53,6 +53,7 @@ bool stopped = false;
 float since_stopped = 0;
 
 void setup() {
+  delay(2000);
   pinMode(TRIG_PIN, OUTPUT);
   pinMode(ECHO_PIN, INPUT);
   digitalWrite(TRIG_PIN, LOW);  // Set receive to low to not trigger on start
@@ -120,6 +121,7 @@ void loop() {
       delay(500);
       sv.write(INITIAL_ANGLE);
       launched = true;
+      delay(300);
     }
 
   } else {
