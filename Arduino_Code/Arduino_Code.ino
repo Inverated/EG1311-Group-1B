@@ -25,7 +25,7 @@ MotorPin1: High;  MotorPin2: High                   => Not go (+ve & -ve same sa
 int TRIG_PIN = 12;
 int ECHO_PIN = 13;
 float SPEED_OF_SOUND = 0.0345;
-int STOPPING_DISTANCE = 10; 
+int STOPPING_DISTANCE = 7; 
 int STOP_TIME_TO_LAUNCH = 1000;
 
 /*
@@ -49,7 +49,7 @@ int RIGHT_ENABLE_PIN = 6;   // PWN for controlling speed
 Servo sv;
 int SERVO_PIN = 3;          // PWM for controlling angle
 int INITIAL_ANGLE = 230;
-int LAUNCH_ANGLE = 70;
+int LAUNCH_ANGLE = 90;
 
 // Others
 bool launched = false;
